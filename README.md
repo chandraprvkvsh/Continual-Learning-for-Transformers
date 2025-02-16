@@ -1,12 +1,13 @@
-# Continual Learning for Named Entity Recognition
+# Continual Learning for Transformers
 
 ## Overview
 
-This project explores Named Entity Recognition (NER) using continual learning techniques. The model is trained on multiple datasets (data1, data2, etc.), where each dataset corresponds to a different NER task. The number of tasks (datasets) is configurable, making the approach highly flexible. Elastic Weight Consolidation (EWC) is used to address catastrophic forgetting.
+This project explores Named Entity Recognition (NER) using continual learning techniques with an Encoder-only transformer model. The model is trained on multiple datasets (data1, data2, etc.), where each dataset corresponds to a different NER task. The number of tasks (datasets) is configurable, making the approach highly flexible. Elastic Weight Consolidation (EWC) is used to address catastrophic forgetting.
 
 ## Approach
 
 - **Continual Learning**: The model sequentially learns multiple NER tasks on different datasets.
+- **Encoder-only Transformer**: Utilizes an Encoder-only transformer model for NER tasks.
 - **Configurable Training**: Users can configure the number of datasets, entity set, and preprocessing mechanisms.
 - **EWC Mechanism**: Fisher Information is computed to retain knowledge from previous tasks.
 
@@ -121,6 +122,7 @@ Note: The provided datasets are for medical NER tasks, but you can replace them 
    source .venv/bin/activate  # macOS/Linux
    .venv\Scripts\activate  # Windows
    ```
+
 2. **Install Dependencies**:
    ```sh
    pip install -r requirements.txt
@@ -137,10 +139,12 @@ Note: The provided datasets are for medical NER tasks, but you can replace them 
    ```sh
    docker build -t ewc_ner .
    ```
+
 2. **Run without Saving Output**:
    ```sh
    docker run -it --rm ewc_ner --data-dir /app/data --output-dir /app/output --wandb
    ```
+
 3. **Run with Output Saved to Host**:
    ```sh
    docker run -it \
