@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project explores Named Entity Recognition (NER) using continual learning techniques with an Encoder-only transformer model. The model is trained on multiple datasets (data1, data2, etc.), where each dataset corresponds to a different NER task. The number of tasks (datasets) is configurable, making the approach highly flexible. Elastic Weight Consolidation (EWC) is used to address catastrophic forgetting.
+This project focuses on applying continual learning methods to an Encoder-only transformer model for Named Entity Recognition (NER). The model is trained across multiple datasets, each representing a distinct NER task. The approach is highly flexible, allowing for the number of tasks (datasets) to be configured. Elastic Weight Consolidation (EWC) is employed to mitigate catastrophic forgetting.
 
 ## Approach
 
