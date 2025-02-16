@@ -20,8 +20,6 @@ wheels/
 .venv
 wandb
 
-data/
-
 *.manifest
 *.spec
 
