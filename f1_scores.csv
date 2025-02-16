@@ -1,8 +1,0 @@
-,Performance on the test set of T1,Performance on the test set of T1 and T2,"Performance on the test set of T1, T2 and T3",Performance on combined G1+G2+G3
-allergy_name,0.738386,0.824524,0.90113,0.797745
-cancer,0.726179,0.793356,0.833593,0.74293
-chronic_disease,0.77963,0.805484,0.854898,0.783958
-treatment,0.777369,0.840783,0.881324,0.801621
-micro avg,0.769029,0.820854,0.86557,0.786875
-macro avg,0.755391,0.816037,0.867736,0.781564
-weighted avg,0.768511,0.820849,0.865853,0.786826
