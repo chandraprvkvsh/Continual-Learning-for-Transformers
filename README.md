@@ -107,7 +107,7 @@ We have conducted experiments to compare the performance of continual learning a
 | macro avg        | 0.755391        | 0.816037        | 0.867736        | 0.781564          |
 | weighted avg     | 0.768511        | 0.820849        | 0.865853        | 0.786826          |
 
-For more detailed experimentation and use cases, please refer to the `notebooks` directory where you can find Jupyter notebooks demonstrating the experiments.
+For more detailed experimentation and metrics, please refer to the `notebooks` directory(in the 'experiment' branch) where you can find Jupyter notebooks demonstrating the experiments.
 
 Note: The provided datasets are for medical NER tasks, but you can replace them with any other datasets for different use cases.
 
