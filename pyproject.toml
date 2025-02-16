@@ -1,0 +1,42 @@
+# pyproject.toml
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ewc_ner"
+version = "0.1.0"
+authors = [
+  { name="Chandra Prakash", email="chandraprvkvsh@gmail.com" },
+]
+description = "Elastic Weight Consolidation for Named Entity Recognition"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.3.0",
+    "seqeval>=1.2.2",
+    "wandb>=0.15.0",
+    "pytest>=7.4.0",
+    "black>=23.7.0",
+    "isort>=5.12.0",
+    "flake8>=6.1.0",
+    "openpyxl>=3.1.5"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/ewc_ner"
+"Bug Tracker" = "https://github.com/yourusername/ewc_ner/issues"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
