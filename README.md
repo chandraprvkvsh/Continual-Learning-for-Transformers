@@ -187,7 +187,9 @@ ENTITY_SET = [] # The comprehensive list of all the labels possible
 - **Update `ENTITY_SET`** to redefine entity categories.
 - **Preprocessing is configurable**, allowing adaptation to different data formats.
 - **Datasets should be placed in the `data/` folder** and follow the naming convention: `data1`, `data2`, `data3`, etc. You can add as many datasets as needed, named sequentially.
+- **Note:** When running this project using Docker, please ensure that the container is allocated sufficient memory and GPU access to avoid any issues. Adjust your Docker runtime settings accordingly before starting the container.
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
